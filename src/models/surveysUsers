@@ -1,0 +1,25 @@
+import { Column, CreateDateColumn, Entity, PrimaryColumn, TableForeignKey } from "typeorm";
+import { ForeignKeyMetadata } from "typeorm/metadata/ForeignKeyMetadata";
+import { v4 as uuid } from 'uuid';
+
+@Entity("surveysUsers")
+class SurveysUsers {
+    @PrimaryColumn()
+    readonly id: string;
+
+    //@ForeignKeyMetadata
+
+    @Column()
+    value: number;
+
+    @CreateDateColumn()
+    created_at: Date;
+
+    constructor() {
+        if (!this.id) {
+            this.id = uuid();
+        }
+    }
+}
+
+export { SurveysUsers };
