@@ -1,13 +1,16 @@
 import { Column, CreateDateColumn, Entity, PrimaryColumn, TableForeignKey } from "typeorm";
-import { ForeignKeyMetadata } from "typeorm/metadata/ForeignKeyMetadata";
 import { v4 as uuid } from 'uuid';
 
 @Entity("surveysUsers")
-class SurveysUsers {
+class SurveyUser {
     @PrimaryColumn()
     readonly id: string;
 
-    //@ForeignKeyMetadata
+    @Column()
+    user_id: number;
+
+    @Column()
+    survey_id: number;
 
     @Column()
     value: number;
@@ -22,4 +25,4 @@ class SurveysUsers {
     }
 }
 
-export { SurveysUsers };
+export { SurveyUser };
