@@ -15,3 +15,4 @@ router.get("/surveys", surveysController.show);
 router.post("/sendMail", sendMailController.execute);
 
 export { router }
+

@@ -1,7 +1,7 @@
 import { EntityRepository, Repository } from "typeorm";
-import { SurveyUser } from "../models/SurveyUser";
+import { SurveyUsers } from "../models/SurveyUser";
 
-@EntityRepository(SurveyUser)
-class SurveysUsersRepository extends Repository<SurveyUser> { }
+@EntityRepository(SurveyUsers)
+class SurveysUsersRepository extends Repository<SurveyUsers> { }
 
 export { SurveysUsersRepository };

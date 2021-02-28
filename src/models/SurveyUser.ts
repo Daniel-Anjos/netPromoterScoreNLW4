@@ -2,7 +2,7 @@ import { Column, CreateDateColumn, Entity, PrimaryColumn, TableForeignKey } from
 import { v4 as uuid } from 'uuid';
 
 @Entity("surveysUsers")
-class SurveyUser {
+class SurveyUsers {
     @PrimaryColumn()
     readonly id: string;
 
@@ -25,4 +25,4 @@ class SurveyUser {
     }
 }
 
-export { SurveyUser };
+export { SurveyUsers };
