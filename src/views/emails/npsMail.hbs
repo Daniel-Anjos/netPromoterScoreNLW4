@@ -7,21 +7,30 @@
         display: flex;
         flex-direction: column;
     }
+
     .value {
         padding: 10px;
-        background: #1802da;
-        color: black;
+        margin: 1px;
+        background: #0e017c;
+        color: white;
         border-radius: 6px;
         width: 15px;
         text-align: center;
+        font-weight: bold;
+        text-decoration: none;
     }
-    .level{
+
+    .level {
         display: flex;
         margin: 10px;
         justify-content: space-between;
         width: 350px;
+        font-weight: bold;
+        text-decoration: underline;
+        font-style: italic;
     }
-    .answers{
+
+    .answers {
         width: 350px;
         display: flex;
         justify-content: space-between;
@@ -39,16 +48,16 @@
     </div>
     <strong>{{description}}</strong>
     <div class="answers">
-        <a class="value" href="">1</a>
-        <a class="value" href="">2</a>
-        <a class="value" href="">3</a>
-        <a class="value" href="">4</a>
-        <a class="value" href="">5</a>
-        <a class="value" href="">6</a>
-        <a class="value" href="">7</a>
-        <a class="value" href="">8</a>
-        <a class="value" href="">9</a>
-        <a class="value" href="">10</a>
+        <a class="value" href="{{link}}/1?u={{user_id}}">1</a>
+        <a class="value" href="{{link}}/2?u={{user_id}}">2</a>
+        <a class="value" href="{{link}}/3?u={{user_id}}">3</a>
+        <a class="value" href="{{link}}/4?u={{user_id}}">4</a>
+        <a class="value" href="{{link}}/5?u={{user_id}}">5</a>
+        <a class="value" href="{{link}}/6?u={{user_id}}">6</a>
+        <a class="value" href="{{link}}/7?u={{user_id}}">7</a>
+        <a class="value" href="{{link}}/8?u={{user_id}}">8</a>
+        <a class="value" href="{{link}}/9?u={{user_id}}">9</a>
+        <a class="value" href="{{link}}/10?u={{user_id}}">10</a>
     </div>
     <br />
     <br />
