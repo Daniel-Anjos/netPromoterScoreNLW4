@@ -31,7 +31,7 @@ class SendMailService {
             to,
             subject,
             html,
-            from: "NPS<noreply@nps.com.br>"
+            from: "NPS<noreply@handit.com.br>"
         })
         console.log(`Message sent: ${message.messageId}`,);
         //Preview disponível apenas quando o envio for com uma conta Etheral

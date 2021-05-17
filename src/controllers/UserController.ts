@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import { getCustomRepository } from 'typeorm';
 import { UsersRepository } from '../repositories/UsersRepository';
+//Biblioteca para fazer uma validação pelo "shape"
 import * as yup from "yup";
 import { AppError } from '../errors/AppError';
 

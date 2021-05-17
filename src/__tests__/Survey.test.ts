@@ -10,6 +10,7 @@ describe("Surveys", () => {
         await connection.runMigrations();
     });
 
+    //Removendo os dados no database
     afterAll(async () => {
         const connection = getConnection();
         await connection.dropDatabase();
@@ -26,6 +27,7 @@ describe("Surveys", () => {
         //Pode-se inserir mais de um expect
         expect(response.body).toHaveProperty("id");
     });
+
     it("Should be able to get all surveys", async () => {
         await request(app).post("/surveys")
             .send({
@@ -33,7 +35,6 @@ describe("Surveys", () => {
                 description: "De 0 a 10 qual nota você dá para este teste?"
             });
         const response = await request(app).get("/surveys");
-
         expect(response.body.length).toBe(2);
     });
 
