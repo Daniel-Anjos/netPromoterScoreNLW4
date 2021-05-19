@@ -25,46 +25,49 @@ h2{
     display: flex;
     justify-content: center;
     margin: 3.2rem;
+    font-size: small;
 }
 .buttons-container a {
     width: 30rem;
-    height: 10.4rem;
-    border-radius: 0.8rem;
-    margin-right: 1.6rem;
-    font: 700 2.4rem Archivo;
+    height:10rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font: 700 2rem Archivo;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     text-decoration: none;
     /*Transição do backgroud*/
     transition: background 0.2s;
     color: var(--color-button-text);
 }
-.buttons-container a.study{
+.buttons-container a.survey-email, a.survey-list{
     background: var(--color-primary-lighter);
+    margin-right: 1rem;
 }
-.buttons-container a.study:hover {
+.buttons-container a.survey-email:hover, a.survey-list:hover{
     background: var(--color-primary-light);
 }
-.buttons-container a.give-classes{
+.buttons-container a.response-count, a.new-registration{
     background: var(--color-secondary);
-    margin-right: 0;
+    margin-right: 1;
 }
-.buttons-container a.give-classes:hover {
+.buttons-container a.response-count:hover, a.new-registration:hover {
     background: var(--color-secondary-dark);
 }
 .buttons-container a img{
-    width: 4rem; 
-    margin-right: 2.4rem;
+    width: 5rem; 
+    margin-right: 1rem;
+    margin-left: 1.5rem;
 }
-.total-connections{
-    font-size: 1.8rem;
+.total-search{
+    font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
 }
-.total-connections img{
+.total-search img{
     margin-left: 0.8rem;
 }
 
@@ -105,7 +108,7 @@ h2{
         justify-content: flex-start;
         margin: 0;
     }
-    .total-connections{
+    .total-search{
         grid-area: texting;
         justify-self: end;
         font-size: 1.2rem;
