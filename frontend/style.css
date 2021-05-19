@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100vh;
+    font-size: xx-large;
+    color: white;
+}
+body{
+    background: #37BE9B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body, input, button{
+        /* weight, size and family*/
+    font: 500 1.6rem Poppins;
+    color: #FFF;
+}
+h1{
+    align-items: center;
+}
