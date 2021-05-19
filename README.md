@@ -6,3 +6,5 @@ Trilha de Node.js da NLW 4
 
 ![NLW#4](https://github.com/Daniel-Anjos/netPromoterScoreNLW4/blob/main/NLW04.png)
 
+![Estrutura do Projeto](https://github.com/Daniel-Anjos/netPromoterScoreNLW4/blob/main/Net%20Promoter%20Score.png)
+
